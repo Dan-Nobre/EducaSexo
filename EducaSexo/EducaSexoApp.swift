@@ -11,7 +11,7 @@ import SwiftUI
 struct EducaSexoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabBarView()
         }
     }
 }

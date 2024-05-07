@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522502D2BEA673100435EB1 /* EducaSexoApp.swift */; };
-		652250302BEA673100435EB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522502F2BEA673100435EB1 /* ContentView.swift */; };
 		652250322BEA673200435EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652250312BEA673200435EB1 /* Assets.xcassets */; };
 		652250362BEA673200435EB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652250352BEA673200435EB1 /* Preview Assets.xcassets */; };
 		652250402BEA673200435EB1 /* EducaSexoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522503F2BEA673200435EB1 /* EducaSexoTests.swift */; };
 		6522504A2BEA673200435EB1 /* EducaSexoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250492BEA673200435EB1 /* EducaSexoUITests.swift */; };
 		6522504C2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522504B2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift */; };
+		652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250582BEA6A5600435EB1 /* TabBarView.swift */; };
+		6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505A2BEA6A8800435EB1 /* ExploreView.swift */; };
+		6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505C2BEA6A9D00435EB1 /* LoginView.swift */; };
+		6522505F2BEA6AB600435EB1 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505E2BEA6AB600435EB1 /* Mapping.swift */; };
+		652250612BEA6ACF00435EB1 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250602BEA6ACF00435EB1 /* MapsView.swift */; };
+		652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250622BEA6AE200435EB1 /* QuestionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		6522502A2BEA673100435EB1 /* EducaSexo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaSexo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6522502D2BEA673100435EB1 /* EducaSexoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoApp.swift; sourceTree = "<group>"; };
-		6522502F2BEA673100435EB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		652250312BEA673200435EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652250332BEA673200435EB1 /* EducaSexo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EducaSexo.entitlements; sourceTree = "<group>"; };
 		652250352BEA673200435EB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +49,12 @@
 		652250452BEA673200435EB1 /* EducaSexoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducaSexoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652250492BEA673200435EB1 /* EducaSexoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoUITests.swift; sourceTree = "<group>"; };
 		6522504B2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		652250582BEA6A5600435EB1 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		6522505A2BEA6A8800435EB1 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		6522505C2BEA6A9D00435EB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6522505E2BEA6AB600435EB1 /* Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		652250602BEA6ACF00435EB1 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		652250622BEA6AE200435EB1 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				6522502D2BEA673100435EB1 /* EducaSexoApp.swift */,
-				6522502F2BEA673100435EB1 /* ContentView.swift */,
+				652250582BEA6A5600435EB1 /* TabBarView.swift */,
+				6522505A2BEA6A8800435EB1 /* ExploreView.swift */,
+				652250622BEA6AE200435EB1 /* QuestionsView.swift */,
+				6522505E2BEA6AB600435EB1 /* Mapping.swift */,
+				652250602BEA6ACF00435EB1 /* MapsView.swift */,
+				6522505C2BEA6A9D00435EB1 /* LoginView.swift */,
 				652250312BEA673200435EB1 /* Assets.xcassets */,
 				652250332BEA673200435EB1 /* EducaSexo.entitlements */,
 				652250342BEA673200435EB1 /* Preview Content */,
@@ -259,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652250302BEA673100435EB1 /* ContentView.swift in Sources */,
+				652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */,
+				652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */,
+				6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */,
+				6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */,
+				652250612BEA6ACF00435EB1 /* MapsView.swift in Sources */,
 				6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */,
+				6522505F2BEA6AB600435EB1 /* Mapping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
