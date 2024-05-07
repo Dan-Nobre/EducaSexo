@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522502D2BEA673100435EB1 /* EducaSexoApp.swift */; };
+		652250322BEA673200435EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652250312BEA673200435EB1 /* Assets.xcassets */; };
+		652250362BEA673200435EB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652250352BEA673200435EB1 /* Preview Assets.xcassets */; };
+		652250402BEA673200435EB1 /* EducaSexoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522503F2BEA673200435EB1 /* EducaSexoTests.swift */; };
+		6522504A2BEA673200435EB1 /* EducaSexoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250492BEA673200435EB1 /* EducaSexoUITests.swift */; };
+		6522504C2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522504B2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift */; };
+		652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250582BEA6A5600435EB1 /* TabBarView.swift */; };
+		6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505A2BEA6A8800435EB1 /* ExploreView.swift */; };
+		6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505C2BEA6A9D00435EB1 /* LoginView.swift */; };
+		6522505F2BEA6AB600435EB1 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505E2BEA6AB600435EB1 /* Mapping.swift */; };
+		652250612BEA6ACF00435EB1 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250602BEA6ACF00435EB1 /* MapsView.swift */; };
+		652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250622BEA6AE200435EB1 /* QuestionsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6522503C2BEA673200435EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652250222BEA673100435EB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652250292BEA673100435EB1;
+			remoteInfo = EducaSexo;
+		};
+		652250462BEA673200435EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 652250222BEA673100435EB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 652250292BEA673100435EB1;
+			remoteInfo = EducaSexo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6522502A2BEA673100435EB1 /* EducaSexo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaSexo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6522502D2BEA673100435EB1 /* EducaSexoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoApp.swift; sourceTree = "<group>"; };
+		652250312BEA673200435EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		652250332BEA673200435EB1 /* EducaSexo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EducaSexo.entitlements; sourceTree = "<group>"; };
+		652250352BEA673200435EB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6522503B2BEA673200435EB1 /* EducaSexoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducaSexoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6522503F2BEA673200435EB1 /* EducaSexoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoTests.swift; sourceTree = "<group>"; };
+		652250452BEA673200435EB1 /* EducaSexoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EducaSexoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		652250492BEA673200435EB1 /* EducaSexoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoUITests.swift; sourceTree = "<group>"; };
+		6522504B2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		652250582BEA6A5600435EB1 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		6522505A2BEA6A8800435EB1 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		6522505C2BEA6A9D00435EB1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6522505E2BEA6AB600435EB1 /* Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapping.swift; sourceTree = "<group>"; };
+		652250602BEA6ACF00435EB1 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
+		652250622BEA6AE200435EB1 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652250272BEA673100435EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250382BEA673200435EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250422BEA673200435EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		652250212BEA673100435EB1 = {
+			isa = PBXGroup;
+			children = (
+				6522502C2BEA673100435EB1 /* EducaSexo */,
+				6522503E2BEA673200435EB1 /* EducaSexoTests */,
+				652250482BEA673200435EB1 /* EducaSexoUITests */,
+				6522502B2BEA673100435EB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6522502B2BEA673100435EB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6522502A2BEA673100435EB1 /* EducaSexo.app */,
+				6522503B2BEA673200435EB1 /* EducaSexoTests.xctest */,
+				652250452BEA673200435EB1 /* EducaSexoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6522502C2BEA673100435EB1 /* EducaSexo */ = {
+			isa = PBXGroup;
+			children = (
+				6522502D2BEA673100435EB1 /* EducaSexoApp.swift */,
+				652250582BEA6A5600435EB1 /* TabBarView.swift */,
+				6522505A2BEA6A8800435EB1 /* ExploreView.swift */,
+				652250622BEA6AE200435EB1 /* QuestionsView.swift */,
+				6522505E2BEA6AB600435EB1 /* Mapping.swift */,
+				652250602BEA6ACF00435EB1 /* MapsView.swift */,
+				6522505C2BEA6A9D00435EB1 /* LoginView.swift */,
+				652250312BEA673200435EB1 /* Assets.xcassets */,
+				652250332BEA673200435EB1 /* EducaSexo.entitlements */,
+				652250342BEA673200435EB1 /* Preview Content */,
+			);
+			path = EducaSexo;
+			sourceTree = "<group>";
+		};
+		652250342BEA673200435EB1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				652250352BEA673200435EB1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6522503E2BEA673200435EB1 /* EducaSexoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6522503F2BEA673200435EB1 /* EducaSexoTests.swift */,
+			);
+			path = EducaSexoTests;
+			sourceTree = "<group>";
+		};
+		652250482BEA673200435EB1 /* EducaSexoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				652250492BEA673200435EB1 /* EducaSexoUITests.swift */,
+				6522504B2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift */,
+			);
+			path = EducaSexoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		652250292BEA673100435EB1 /* EducaSexo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6522504F2BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexo" */;
+			buildPhases = (
+				652250262BEA673100435EB1 /* Sources */,
+				652250272BEA673100435EB1 /* Frameworks */,
+				652250282BEA673100435EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EducaSexo;
+			productName = EducaSexo;
+			productReference = 6522502A2BEA673100435EB1 /* EducaSexo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6522503A2BEA673200435EB1 /* EducaSexoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652250522BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexoTests" */;
+			buildPhases = (
+				652250372BEA673200435EB1 /* Sources */,
+				652250382BEA673200435EB1 /* Frameworks */,
+				652250392BEA673200435EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6522503D2BEA673200435EB1 /* PBXTargetDependency */,
+			);
+			name = EducaSexoTests;
+			productName = EducaSexoTests;
+			productReference = 6522503B2BEA673200435EB1 /* EducaSexoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		652250442BEA673200435EB1 /* EducaSexoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652250552BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexoUITests" */;
+			buildPhases = (
+				652250412BEA673200435EB1 /* Sources */,
+				652250422BEA673200435EB1 /* Frameworks */,
+				652250432BEA673200435EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				652250472BEA673200435EB1 /* PBXTargetDependency */,
+			);
+			name = EducaSexoUITests;
+			productName = EducaSexoUITests;
+			productReference = 652250452BEA673200435EB1 /* EducaSexoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		652250222BEA673100435EB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					652250292BEA673100435EB1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					6522503A2BEA673200435EB1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 652250292BEA673100435EB1;
+					};
+					652250442BEA673200435EB1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 652250292BEA673100435EB1;
+					};
+				};
+			};
+			buildConfigurationList = 652250252BEA673100435EB1 /* Build configuration list for PBXProject "EducaSexo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 652250212BEA673100435EB1;
+			productRefGroup = 6522502B2BEA673100435EB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652250292BEA673100435EB1 /* EducaSexo */,
+				6522503A2BEA673200435EB1 /* EducaSexoTests */,
+				652250442BEA673200435EB1 /* EducaSexoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652250282BEA673100435EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652250362BEA673200435EB1 /* Preview Assets.xcassets in Resources */,
+				652250322BEA673200435EB1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250392BEA673200435EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250432BEA673200435EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652250262BEA673100435EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */,
+				652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */,
+				6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */,
+				6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */,
+				652250612BEA6ACF00435EB1 /* MapsView.swift in Sources */,
+				6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */,
+				6522505F2BEA6AB600435EB1 /* Mapping.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250372BEA673200435EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652250402BEA673200435EB1 /* EducaSexoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652250412BEA673200435EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6522504C2BEA673200435EB1 /* EducaSexoUITestsLaunchTests.swift in Sources */,
+				6522504A2BEA673200435EB1 /* EducaSexoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6522503D2BEA673200435EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652250292BEA673100435EB1 /* EducaSexo */;
+			targetProxy = 6522503C2BEA673200435EB1 /* PBXContainerItemProxy */;
+		};
+		652250472BEA673200435EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 652250292BEA673100435EB1 /* EducaSexo */;
+			targetProxy = 652250462BEA673200435EB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6522504D2BEA673200435EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6522504E2BEA673200435EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		652250502BEA673200435EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EducaSexo/EducaSexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EducaSexo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		652250512BEA673200435EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EducaSexo/EducaSexo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EducaSexo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		652250532BEA673200435EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EducaSexo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EducaSexo";
+			};
+			name = Debug;
+		};
+		652250542BEA673200435EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EducaSexo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EducaSexo";
+			};
+			name = Release;
+		};
+		652250562BEA673200435EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EducaSexo;
+			};
+			name = Debug;
+		};
+		652250572BEA673200435EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "adaifce.edu-EducaSexoApp.EducaSexoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EducaSexo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652250252BEA673100435EB1 /* Build configuration list for PBXProject "EducaSexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6522504D2BEA673200435EB1 /* Debug */,
+				6522504E2BEA673200435EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6522504F2BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652250502BEA673200435EB1 /* Debug */,
+				652250512BEA673200435EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652250522BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652250532BEA673200435EB1 /* Debug */,
+				652250542BEA673200435EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652250552BEA673200435EB1 /* Build configuration list for PBXNativeTarget "EducaSexoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652250562BEA673200435EB1 /* Debug */,
+				652250572BEA673200435EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 652250222BEA673100435EB1 /* Project object */;
+}
