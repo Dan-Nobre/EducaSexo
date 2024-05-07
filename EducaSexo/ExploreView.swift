@@ -16,11 +16,8 @@ struct ExploreView: View {
             VStack {
                 Text("exploreView")
             }
-            .navigationTitle("Seu Resumo!😘")
-            .navigationBarTitleDisplayMode(.large)
-
+            .navigationTitle("Explore")
         }
-        .navigationBarHidden(true)
         .ignoresSafeArea()
     }
 }

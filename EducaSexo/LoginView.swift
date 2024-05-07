@@ -17,16 +17,16 @@ struct LoginView: View {
                 VStack {
                     Image("LogoEducaSexo")
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .overlay(Circle().stroke(Color.azulES.opacity(0.1), lineWidth: 0.5))
-                        .shadow(color: Color.azulES.opacity(0.3), radius: 50)
+                        .overlay(Circle().stroke(Color.blue.opacity(0.1), lineWidth: 0.5))
+                        .shadow(color: Color.blue.opacity(0.3), radius: 50)
                     HStack(spacing:0){
                         Group{
                             Text("Educa")
                                 .bold()
-                                .foregroundStyle(.azulES)
+                                .foregroundStyle(.blue)
                             Text("Sexo")
                                 .fontWeight(.light)
-                                .foregroundStyle(.rosaES)
+                                .foregroundStyle(.pink)
                         }
                         .font(.system(size: 40))
                     }
@@ -35,12 +35,12 @@ struct LoginView: View {
                     NavigationLink(destination: TabBarView()) {
                         Text("Profissional")
                     }
-                    .buttonStyle(MyButtonStyle(color: Color.azulES))
+                    .buttonStyle(MyButtonStyle(color: Color.blue))
                     
                     NavigationLink(destination: TabBarView()) {
                         Text("Curioso")
                     }
-                    .buttonStyle(MyButtonStyle(color: Color.rosaES))
+                    .buttonStyle(MyButtonStyle(color: Color.pink))
                 }
                 .padding(EdgeInsets(top: 75, leading: 71, bottom: 0, trailing: 71))
             }
