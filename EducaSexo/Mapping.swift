@@ -10,15 +10,21 @@ import SwiftUI
 
 
 struct Mapping: View {
+    //init para mudar a cor da "navigation title"
+    init(){
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
+    }
+    
     var body: some View {
-        NavigationStack {
-            MapsView()
-                .frame(width: 345, height: 375)
-                .border(Color.white, width: 5)
-                .cornerRadius(10)
-                .shadow(radius: 7)
-            
+            NavigationView {
+                    VStack (alignment: .leading, spacing: 30) {
+//                        Spacer().frame(height: 10)
+                        MapsView()
+//                        Spacer()
+                    }
+                    .navigationTitle("ioi")
         }
+        .ignoresSafeArea()
     }
 }
 

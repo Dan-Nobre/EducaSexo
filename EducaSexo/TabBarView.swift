@@ -24,7 +24,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }
-            MapsView()
+            Mapping()
                 .tabItem {
                     Label("Mapeamento", systemImage: "map")
                 }
