@@ -20,7 +20,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Perguntas", systemImage: "questionmark.bubble")
                 }
-            ArtViews()
+            ArtView()
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }
@@ -29,7 +29,6 @@ struct TabBarView: View {
                     Label("Mapeamento", systemImage: "map")
                 }
         }
-        .navigationTitle("EducaSexo")
     }
 }
 
