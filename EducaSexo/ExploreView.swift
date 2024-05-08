@@ -16,14 +16,12 @@ struct ExploreView: View {
             VStack {
                 Text("exploreView")
             }
-            .navigationTitle("Explore")
+            .navigationTitle("Esse é seu resumo")
         }
         .ignoresSafeArea()
     }
 }
 
-struct ExploreView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExploreView()
-    }
+#Preview {
+    ExploreView()
 }

@@ -10,8 +10,15 @@ import MapKit
 
 struct MapsView: View {
     var body: some View {
-        Map()
-            .navigationTitle("Mapeamento")
+        NavigationStack {
+            
+            //Conteúdo --
+            VStack {
+                Map()
+                Text("exploreView")
+            }
+            .ignoresSafeArea()
+        }
     }
 }
 
