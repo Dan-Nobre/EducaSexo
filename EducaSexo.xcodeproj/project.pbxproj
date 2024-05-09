@@ -24,10 +24,10 @@
 		CFE95D2C2BEAAF5B00A8E9E7 /* CardArtigoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */; };
 		CFE95D2E2BEAAFA400A8E9E7 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */; };
 		CFE95D302BEB9B9B00A8E9E7 /* CardPerguntaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D2F2BEB9B9B00A8E9E7 /* CardPerguntaView.swift */; };
-		CFE95D342BEBA9A700A8E9E7 /* ---.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D332BEBA9A700A8E9E7 /* ---.swift */; };
 		CFE95D362BEBB9AB00A8E9E7 /* ButtonsView30.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D352BEBB9AB00A8E9E7 /* ButtonsView30.swift */; };
 		CFE95D382BEBF45E00A8E9E7 /* CardPerguntaAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D372BEBF45E00A8E9E7 /* CardPerguntaAddView.swift */; };
-		CFE95D3A2BEC061D00A8E9E7 /* --.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D392BEC061D00A8E9E7 /* --.swift */; };
+		CFE95D3C2BED080F00A8E9E7 /* ScrollPerguntaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D3B2BED080F00A8E9E7 /* ScrollPerguntaView.swift */; };
+		CFE95D3E2BED0A6600A8E9E7 /* ScrollArtigoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D3D2BED0A6600A8E9E7 /* ScrollArtigoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +69,10 @@
 		CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArtigoView.swift; sourceTree = "<group>"; };
 		CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		CFE95D2F2BEB9B9B00A8E9E7 /* CardPerguntaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPerguntaView.swift; sourceTree = "<group>"; };
-		CFE95D332BEBA9A700A8E9E7 /* ---.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "---.swift"; sourceTree = "<group>"; };
 		CFE95D352BEBB9AB00A8E9E7 /* ButtonsView30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView30.swift; sourceTree = "<group>"; };
 		CFE95D372BEBF45E00A8E9E7 /* CardPerguntaAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPerguntaAddView.swift; sourceTree = "<group>"; };
-		CFE95D392BEC061D00A8E9E7 /* --.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "--.swift"; sourceTree = "<group>"; };
+		CFE95D3B2BED080F00A8E9E7 /* ScrollPerguntaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPerguntaView.swift; sourceTree = "<group>"; };
+		CFE95D3D2BED0A6600A8E9E7 /* ScrollArtigoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollArtigoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +132,13 @@
 				3505A30C2BEBA90E000A634E /* ArtigoView.swift */,
 				6522505E2BEA6AB600435EB1 /* MapsView.swift */,
 				652250602BEA6ACF00435EB1 /* Maps.swift */,
-				CFE95D332BEBA9A700A8E9E7 /* ---.swift */,
+				CFE95D3B2BED080F00A8E9E7 /* ScrollPerguntaView.swift */,
+				CFE95D3D2BED0A6600A8E9E7 /* ScrollArtigoView.swift */,
 				CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */,
 				CFE95D352BEBB9AB00A8E9E7 /* ButtonsView30.swift */,
 				CFE95D2F2BEB9B9B00A8E9E7 /* CardPerguntaView.swift */,
 				CFE95D372BEBF45E00A8E9E7 /* CardPerguntaAddView.swift */,
 				CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */,
-				CFE95D392BEC061D00A8E9E7 /* --.swift */,
 				652250312BEA673200435EB1 /* Assets.xcassets */,
 				652250332BEA673200435EB1 /* EducaSexo.entitlements */,
 				652250342BEA673200435EB1 /* Preview Content */,
@@ -304,12 +304,12 @@
 				652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */,
 				652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */,
 				CFE95D2A2BEA9C1F00A8E9E7 /* ArtView.swift in Sources */,
-				CFE95D342BEBA9A700A8E9E7 /* ---.swift in Sources */,
+				CFE95D3E2BED0A6600A8E9E7 /* ScrollArtigoView.swift in Sources */,
 				6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */,
+				CFE95D3C2BED080F00A8E9E7 /* ScrollPerguntaView.swift in Sources */,
 				6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */,
 				CFE95D382BEBF45E00A8E9E7 /* CardPerguntaAddView.swift in Sources */,
 				652250612BEA6ACF00435EB1 /* Maps.swift in Sources */,
-				CFE95D3A2BEC061D00A8E9E7 /* --.swift in Sources */,
 				CFE95D2E2BEAAFA400A8E9E7 /* ButtonsView.swift in Sources */,
 				6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */,
 				3505A30D2BEBA90E000A634E /* ArtigoView.swift in Sources */,
