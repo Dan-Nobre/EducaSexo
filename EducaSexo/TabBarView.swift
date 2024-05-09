@@ -20,11 +20,11 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Perguntas", systemImage: "questionmark.bubble")
                 }
-            ArtView()
+            ArtigoView()
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }
-            Mapping()
+            MapsView()
                 .tabItem {
                     Label("Mapeamento", systemImage: "map")
                 }
