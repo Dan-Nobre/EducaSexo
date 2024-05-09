@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-struct MapsView: View {
+struct Maps: View {
     var body: some View {
         ZStack {
             Map{}
@@ -21,6 +21,6 @@ struct MapsView: View {
 }
 
 #Preview {
-    MapsView()
+    Maps()
 }
     

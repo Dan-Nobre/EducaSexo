@@ -9,17 +9,17 @@ import Foundation
 import SwiftUI
 
 
-struct Mapping: View {
+struct MapsView: View {
     //init para mudar a cor da "navigation title"
     init(){
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
+//        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
     }
     
     var body: some View {
             NavigationView {
                     VStack (alignment: .leading, spacing: 30) {
 //                        Spacer().frame(height: 10)
-                        MapsView()
+                        Maps()
 //                        Spacer()
                     }
                     .navigationTitle("ioi")
