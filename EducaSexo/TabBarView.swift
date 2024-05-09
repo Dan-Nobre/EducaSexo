@@ -24,7 +24,7 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }
-            Mapping()
+            MapsView()
                 .tabItem {
                     Label("Mapeamento", systemImage: "map")
                 }
@@ -32,8 +32,6 @@ struct TabBarView: View {
     }
 }
 
-struct TabBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBarView()
-    }
+#Preview {
+    TabBarView()
 }
