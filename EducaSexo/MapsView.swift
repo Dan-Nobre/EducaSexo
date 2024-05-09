@@ -1,5 +1,5 @@
 //
-//  MapsView.swift
+//  Mapping.swift
 //  EducaSexoApp
 //
 //  Created by user on 07/05/24.
@@ -61,9 +61,10 @@ struct MapsView: View {
 //                }
 //            }
         }
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    MapsView()
+    Mapping()
 }
