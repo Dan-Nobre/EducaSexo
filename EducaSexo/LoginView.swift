@@ -23,10 +23,10 @@ struct LoginView: View {
                         Group{
                             Text("Educa")
                                 .bold()
-                                .foregroundStyle(.blue)
+                                .foregroundStyle(.azulES)
                             Text("Sexo")
                                 .fontWeight(.light)
-                                .foregroundStyle(.pink)
+                                .foregroundStyle(.rosaES)
                         }
                         .font(.system(size: 40))
                     }
@@ -35,12 +35,12 @@ struct LoginView: View {
                     NavigationLink(destination: TabBarView()) {
                         Text("Profissional")
                     }
-                    .buttonStyle(MyButtonStyle(color: Color.blue))
+                    .buttonStyle(MyButtonStyle(color: Color.azulES))
                     
                     NavigationLink(destination: TabBarView()) {
                         Text("Curioso")
                     }
-                    .buttonStyle(MyButtonStyle(color: Color.pink))
+                    .buttonStyle(MyButtonStyle(color: Color.rosaES))
                 }
                 .padding(EdgeInsets(top: 75, leading: 71, bottom: 0, trailing: 71))
             }

@@ -1,27 +1,26 @@
 //
-//  Mapping.swift
+//  MapsView.swift
 //  EducaSexoApp
 //
-//  Created by user on 07/05/24.
+//  Created by User on 29/04/24.
 //
 
-import Foundation
 import SwiftUI
+import MapKit
 
-
-struct Mapping: View {
+struct Maps: View {
     var body: some View {
-        NavigationStack {
-            MapsView()
-                .frame(width: 345, height: 375)
+        ZStack {
+            Map{}
+                .frame(width: 360, height: 300)
                 .border(Color.white, width: 5)
                 .cornerRadius(10)
                 .shadow(radius: 7)
-            
         }
     }
 }
 
 #Preview {
-    Mapping()
+    Maps()
 }
+    

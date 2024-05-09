@@ -1,28 +1,33 @@
 //
-//  MapsView.swift
+//  Mapping.swift
 //  EducaSexoApp
 //
-//  Created by User on 29/04/24.
+//  Created by user on 07/05/24.
 //
 
+import Foundation
 import SwiftUI
-import MapKit
+
 
 struct MapsView: View {
+    //init para mudar a cor da "navigation title"
+    init(){
+//        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
+    }
+    
     var body: some View {
-        NavigationStack {
-            
-            //Conteúdo --
-            VStack {
-                Map()
-                Text("exploreView")
-            }
-            .ignoresSafeArea()
+            NavigationView {
+                    VStack (alignment: .leading, spacing: 30) {
+//                        Spacer().frame(height: 10)
+                        Maps()
+//                        Spacer()
+                    }
+                    .navigationTitle("ioi")
         }
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
     MapsView()
 }
-    
