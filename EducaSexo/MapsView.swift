@@ -29,5 +29,5 @@ struct MapsView: View {
 }
 
 #Preview {
-    MapsView()
+    Mapping()
 }
