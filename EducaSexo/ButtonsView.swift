@@ -15,7 +15,7 @@ struct ButtonsView: View {
             Image(systemName: "heart.circle.fill")
             Image(systemName: "bookmark.circle.fill")
         }
-        .foregroundColor(.pink)
+        .foregroundColor(.rosaES)
         .font(.largeTitle)
     }
 }
