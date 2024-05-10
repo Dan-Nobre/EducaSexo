@@ -17,7 +17,13 @@ struct ScrollArtigoView: View {
                     CardArtigoView()
                     CardArtigoView()
                 }
+                .scrollTargetLayout()
             }
+            .contentMargins(10, for: .scrollContent) // Add padding
+            .scrollTargetBehavior(.viewAligned)
+            .scrollClipDisabled()
+            .border(.green)
+            .frame(width: 350)
         }
     }
 }
