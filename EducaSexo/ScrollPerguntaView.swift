@@ -11,8 +11,8 @@ struct ScrollPerguntaView: View {
     var body: some View {
         VStack{
             Text("Perguntas mais recentes")
-            ScrollView(.horizontal) {
-                HStack(spacing:10){
+            ScrollView(.horizontal, showsIndicators: true) {
+                HStack(){
                     CardPerguntaAddView() // 170
                     CardPerguntaView()
                     CardPerguntaView()
@@ -21,11 +21,11 @@ struct ScrollPerguntaView: View {
                 .scrollTargetLayout()
                 
             }
-            .contentMargins(10, for: .scrollContent) // Add padding
+            .contentMargins(10, for: .scrollContent)
             .scrollTargetBehavior(.viewAligned)
-            .scrollClipDisabled()
+            .scrollClipDisabled(false)
             .border(.green)
-            .frame(width: 190)
+            .frame(width: 190, height: 100)
         }
     }
 }

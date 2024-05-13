@@ -9,23 +9,31 @@ import SwiftUI
 
 struct CardPerguntaView: View {
     var body: some View {
-            VStack(alignment: .leading){
-                Text("Porque usar preservativo? é necessário")
-                    .font(.caption.bold())
-                    .lineLimit(3, reservesSpace: true)
-                    Spacer()
-                HStack{
-                    Image(systemName:"person.fill.checkmark")
-                    Text("20")
-                        .font(.caption)
-                    Spacer()
-                    ButtonsView30()
+        NavigationView{
+            VStack{
+                Button {
+                    print("open AskView")
+                } label: {
+                    VStack(alignment: .leading){
+                        Text("Porque usar preservativo? é necessário")
+                            .font(.caption.bold())
+                            Spacer()
+                        HStack{
+                            Image(systemName:"person.fill.checkmark")
+                            Text("20")
+                                .font(.caption)
+                            Spacer()
+                            ButtonsView30()
+                        }
+                    }
+                    .padding()
+                    .frame(width: 170, height: 120)
+                    .background(.gray.opacity(0.2))
+                    .cornerRadius(10)
                 }
             }
-            .padding()
-            .frame(width: 170, height: 120)
-            .background(.gray.opacity(0.2))
-            .cornerRadius(10)
+        }
+      .foregroundColor(.black)
     }
 }
 
@@ -33,6 +41,7 @@ struct CardPerguntaView: View {
     CardPerguntaView()
 }
 
+//
 
 //import SwiftUI
 //

@@ -11,18 +11,18 @@ struct ExploreView: View {
     
     var body: some View {
         NavigationStack {
-            
-            //Conteúdo --
-            VStack {
-                Text("exploreView")
-                CardPerguntaView()
-                    .onTapGesture {
-                        print("View pai")
+            ZStack{
+                VStack {
+                    ScrollView(.vertical){
+                        VStack{
+                            ScrollPerguntaView()
+                            ScrollArtigoView()
+                        }
                     }
+                }
+                .navigationTitle("Seu resumo")
             }
-            .navigationTitle("Esse é seu resumo")
         }
-        .ignoresSafeArea()
     }
 }
 
