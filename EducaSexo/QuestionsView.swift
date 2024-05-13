@@ -9,9 +9,9 @@ import SwiftUI
 
 struct QuestionsView: View {
     //init para mudar a cor da "navigation title"
-    init(){
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
-    }
+//    init(){
+//        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
+//    }
     
     var body: some View {
         ScrollView{
@@ -23,21 +23,28 @@ struct QuestionsView: View {
             .frame(maxWidth: .infinity)
             .padding(.bottom, 200)
             .background(.azulES)
-            AskCardView()
-                .frame(height: 0)
-                .zIndex(1)
-                .offset(y: -40)
-            AnswerQuestionCard()
-                .frame(width: 352)
-                .zIndex(2)
-                .offset(y: 65)
+            VStack{
+                AskCardView()
+                    .frame(height: 0)
+                    .zIndex(1)
+                    .offset(y: -40)
+                AnswerQuestionCard()
+                    .padding(EdgeInsets(top: 70, leading: 20, bottom: 0, trailing: 20))
+                    .zIndex(2)
+                Text("Respostas")
+                    .font(.largeTitle)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                ReplyCardView()
+            }
+            .frame(width: 352)
         }
-        .background(Color.gray)
+        .background(.cinzaES)
         .ignoresSafeArea()
-        
     }
 }
 
 #Preview {
     QuestionsView()
 }
+

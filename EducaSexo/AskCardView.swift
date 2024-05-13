@@ -15,9 +15,7 @@ struct AskCardView: View {
                         .offset(x: -6, y: -15)
 
                     HStack{
-                        Text("Fulano da Silva")
-                        Text("|")
-                        Text("Enfermeiro")
+                        Text("Fulano da Silva | Enfermeiro")
                     }
                     .font(.caption)
                 }
