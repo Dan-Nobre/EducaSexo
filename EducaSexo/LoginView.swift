@@ -15,10 +15,10 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 VStack {
-                    Image("LogoEducaSexo")
+                    Image("logoES")
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .overlay(Circle().stroke(Color.blue.opacity(0.1), lineWidth: 0.5))
-                        .shadow(color: Color.blue.opacity(0.3), radius: 50)
+                        .overlay(Circle().stroke(Color.white.opacity(0.1), lineWidth: 0.5))
+                        .shadow(color: Color.azulES.opacity(0.3), radius: 50)
                     HStack(spacing:0){
                         Group{
                             Text("Educa")
