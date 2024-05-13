@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct ExploreView: View {
+//    init para mudar a cor da "navigation title"
+    init(){
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    }
     
     var body: some View {
         NavigationStack {
-            ZStack{
-                VStack {
-                    ScrollView(.vertical){
-                        VStack{
-                            ScrollPerguntaView()
-                            ScrollArtigoView()
-                        }
-                    }
+            ScrollView{
+                ZStack{
+                    Rectangle()
+                        .fill(.azulES)
+                        .frame(width: 413,height: 340)
                 }
-                .navigationTitle("Seu resumo")
+                VStack{
+                    ScrollPerguntaView()
+                    ScrollArtigoView()
+                }
             }
+            .navigationTitle("Explore View")
+            .ignoresSafeArea()
         }
     }
 }

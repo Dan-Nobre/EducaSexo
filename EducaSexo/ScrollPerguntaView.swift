@@ -4,28 +4,34 @@
 //
 //  Created by ThiagoMotaMachado on 09/05/24.
 //
+//
 
 import SwiftUI
 
 struct ScrollPerguntaView: View {
     var body: some View {
-        VStack{
-            Text("Perguntas mais recentes")
-            ScrollView(.horizontal, showsIndicators: true) {
-                HStack(){
-                    CardPerguntaAddView() // 170
-                    CardPerguntaView()
-                    CardPerguntaView()
-                    CardPerguntaView()
-                }
-                .scrollTargetLayout()
+        NavigationStack{
+            VStack{
+                Text("Perguntas mais recentes")
+                    .font(.headline)
+                    .padding(10)
                 
+                ScrollView(.horizontal){
+                    HStack{
+                        CardPerguntaAddView()
+                        CardPerguntaView()
+                        CardPerguntaView()
+                        CardPerguntaView()
+                        CardPerguntaView()
+                    }
+                    .scrollTargetLayout()
+                }
+                .contentMargins(10, for: .scrollContent)
+                .scrollTargetBehavior(.viewAligned)
+                .scrollClipDisabled(true)
+                .border(.green)
+                .frame(width: 190, height: 100)
             }
-            .contentMargins(10, for: .scrollContent)
-            .scrollTargetBehavior(.viewAligned)
-            .scrollClipDisabled(false)
-            .border(.green)
-            .frame(width: 190, height: 100)
         }
     }
 }
@@ -33,3 +39,35 @@ struct ScrollPerguntaView: View {
 #Preview {
     ScrollPerguntaView()
 }
+
+
+//import SwiftUI
+//
+//struct ScrollPerguntaView: View {
+//    var body: some View {
+//        NavigationStack{
+//            VStack{
+//                Text("Perguntas mais recentes")
+//                ScrollView(.horizontal, showsIndicators: true) {
+//                    HStack(){
+//                        CardPerguntaAddView() // 170
+//                        CardPerguntaView()
+//                        CardPerguntaView()
+//                        CardPerguntaView()
+//                    }
+//                    .scrollTargetLayout()
+//
+//                }
+//                .contentMargins(10, for: .scrollContent)
+//                .scrollTargetBehavior(.viewAligned)
+//                .scrollClipDisabled(false)
+//                .border(.green)
+//                .frame(width: 190, height: 100)
+//            }
+//        }
+//    }
+//}
+//
+//#Preview {
+//    ScrollPerguntaView()
+//}

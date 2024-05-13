@@ -9,31 +9,32 @@ import SwiftUI
 
 struct CardPerguntaView: View {
     var body: some View {
-        NavigationView{
-            VStack{
-                Button {
-                    print("open AskView")
-                } label: {
+        NavigationStack{
+            ZStack{
+//                Color(.gray).ignoresSafeArea()
+                
+                NavigationLink(destination: QuestionsView()){
                     VStack(alignment: .leading){
                         Text("Porque usar preservativo? é necessário")
                             .font(.caption.bold())
-                            Spacer()
+                        //                        .lineLimit(3, reservesSpace: true)
+                        Spacer()
                         HStack{
                             Image(systemName:"person.fill.checkmark")
                             Text("20")
                                 .font(.caption)
                             Spacer()
-                            ButtonsView30()
+                            ButtonsView()
                         }
                     }
                     .padding()
                     .frame(width: 170, height: 120)
-                    .background(.gray.opacity(0.2))
+                    .background(.white)
+                    .foregroundColor(.black)
                     .cornerRadius(10)
                 }
             }
         }
-      .foregroundColor(.black)
     }
 }
 
@@ -41,33 +42,3 @@ struct CardPerguntaView: View {
     CardPerguntaView()
 }
 
-//
-
-//import SwiftUI
-//
-//struct ScrollPerguntaView: View {
-//    var body: some View {
-//        VStack{
-//            Text("Perguntas mais recentes")
-//            ScrollView(.horizontal) {
-//                HStack(spacing:10){
-//                    CardPerguntaAddView() // 170
-//                    CardPerguntaView()
-//                    CardPerguntaView()
-//                    CardPerguntaView()
-//                }
-//                .scrollTargetLayout()
-//
-//            }
-//            .contentMargins(10, for: .scrollContent) // Add padding
-//            .scrollTargetBehavior(.viewAligned)
-//            .scrollClipDisabled()
-//            .border(.green)
-//            .frame(width: 190)
-//        }
-//    }
-//}
-//
-//#Preview {
-//    ScrollPerguntaView()
-//}
