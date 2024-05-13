@@ -27,7 +27,7 @@ struct CardPerguntaAddView: View {
             }
             .padding()
             .frame(width: 170, height: 120)
-            .background(.pink)
+            .background(.rosaES)
             .cornerRadius(10)
     }
 }

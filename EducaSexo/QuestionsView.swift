@@ -14,29 +14,27 @@ struct QuestionsView: View {
     }
     
     var body: some View {
-        NavigationView{
-            VStack(spacing: 0){
-                Rectangle()
-                    .foregroundColor(.azulES)
-                    .frame(maxWidth: .infinity, maxHeight: 307)
-                VStack{
-                    Section{
-                        List{
-                            Text("Oi")
-                        }
-                    }
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                Circle()
-//                    .frame(width: 34)
-//                    .position(CGPoint(x: 350.0, y: -155.0))
-//                Rectangle()
-//                    .foregroundColor(.white)
-                    
+        ScrollView{
+            VStack{
+                
             }
-            .ignoresSafeArea()
-            .navigationTitle("Perguntas")
+            .padding(.top, 60)
+            .padding(.horizontal)
+            .frame(maxWidth: .infinity)
+            .padding(.bottom, 200)
+            .background(.azulES)
+            AskCardView()
+                .frame(height: 0)
+                .zIndex(1)
+                .offset(y: -40)
+            AnswerQuestionCard()
+                .frame(width: 352)
+                .zIndex(2)
+                .offset(y: 65)
         }
+        .background(Color.gray)
+        .ignoresSafeArea()
+        
     }
 }
 
