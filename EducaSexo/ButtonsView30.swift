@@ -8,24 +8,19 @@
 import SwiftUI
 
 struct ButtonsView30: View {
-    var action: () -> Void = { print("Coracao")}
-    var action2: () -> Void = { print("Salva")}
-    
     var body: some View {
-        
-        //precisa ser clicável
-        HStack{
-            Image(systemName: "heart.circle.fill")
-                .onTapGesture {
-                    action()
-                }
-            Image(systemName: "bookmark.circle.fill")
-                .onTapGesture {
-                    action2()
-                }
+      HStack {
+        Button(action: { print("Heart button clicked!") } ) {
+          Image(systemName: "heart.circle.fill")
         }
-        .foregroundColor(.rosaES)
-        .font(.system(size:30.0))
+        Button(action: {
+          print("Bookmark button clicked!")
+        }) {
+          Image(systemName: "bookmark.circle.fill")
+        }
+      }
+      .font(.system(size:30.0))
+      .foregroundColor(.pink)
     }
 }
 

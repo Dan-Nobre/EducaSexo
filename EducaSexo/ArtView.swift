@@ -13,7 +13,7 @@ struct ArtView: View {
             
             //Conteúdo --
             VStack {
-                Text("exploreView")
+                Text("ArtView")
             }
             .navigationTitle("Artigos")
         }

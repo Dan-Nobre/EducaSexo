@@ -23,7 +23,7 @@ struct CardArtigoView: View {
                 Text("Fulano da Silva | Enfermeiro")
                     .font(.system(size: 13.0))
                     Spacer()
-                ButtonsView(action1: {}, action2: {})
+                ButtonsView()
             }
         }
         .padding()
