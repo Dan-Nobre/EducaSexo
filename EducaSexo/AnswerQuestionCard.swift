@@ -10,7 +10,7 @@ import SwiftUI
 
 struct AnswerQuestionCard: View {
     var body: some View{
-        HStack{
+        HStack(spacing: 6){
             HStack{
                 Image(systemName: "text.bubble")
                     .font(.system(size: 17))
@@ -20,7 +20,7 @@ struct AnswerQuestionCard: View {
                     .foregroundColor(Color.white)
                     .bold()
             }
-            .frame(width: 273, height: 30)
+            .frame(width: 266, height: 30)
             .background(Color.rosaES)
             .cornerRadius(30)
             ButtonsView()
