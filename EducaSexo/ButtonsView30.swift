@@ -14,7 +14,7 @@ struct ButtonsView30: View {
     var body: some View {
         
         //precisa ser clicável
-        HStack{
+        HStack(){
             Image(systemName: "heart.circle.fill")
                 .onTapGesture {
                     action()
