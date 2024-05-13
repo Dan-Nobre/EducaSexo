@@ -20,9 +20,10 @@
 		6522505F2BEA6AB600435EB1 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522505E2BEA6AB600435EB1 /* MapsView.swift */; };
 		652250612BEA6ACF00435EB1 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250602BEA6ACF00435EB1 /* Maps.swift */; };
 		652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652250622BEA6AE200435EB1 /* QuestionsView.swift */; };
-		CF5FF4182BEE5C13005222D7 /* ---.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FF4172BEE5C13005222D7 /* ---.swift */; };
-		CF5FF41A2BEE5C24005222D7 /* --.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FF4192BEE5C24005222D7 /* --.swift */; };
-		CF5FF41C2BEE6927005222D7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FF41B2BEE6927005222D7 /* SecondView.swift */; };
+		6526231D2BEE4726007CE86F /* AskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6526231C2BEE4726007CE86F /* AskCardView.swift */; };
+		657B4CBA2BEE652E00002FDD /* AnswerQuestionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657B4CB92BEE652E00002FDD /* AnswerQuestionCard.swift */; };
+		6E4325F92BECF00500B69B7B /* MapsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4325F82BECF00500B69B7B /* MapsSearchView.swift */; };
+		6E4325FB2BED188A00B69B7B /* CardLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4325FA2BED188A00B69B7B /* CardLocalView.swift */; };
 		CFE95D2A2BEA9C1F00A8E9E7 /* ArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D292BEA9C1F00A8E9E7 /* ArtView.swift */; };
 		CFE95D2C2BEAAF5B00A8E9E7 /* CardArtigoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */; };
 		CFE95D2E2BEAAFA400A8E9E7 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */; };
@@ -68,9 +69,10 @@
 		6522505E2BEA6AB600435EB1 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		652250602BEA6ACF00435EB1 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
 		652250622BEA6AE200435EB1 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
-		CF5FF4172BEE5C13005222D7 /* ---.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "---.swift"; sourceTree = "<group>"; };
-		CF5FF4192BEE5C24005222D7 /* --.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "--.swift"; sourceTree = "<group>"; };
-		CF5FF41B2BEE6927005222D7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		6526231C2BEE4726007CE86F /* AskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskCardView.swift; sourceTree = "<group>"; };
+		657B4CB92BEE652E00002FDD /* AnswerQuestionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerQuestionCard.swift; sourceTree = "<group>"; };
+		6E4325F82BECF00500B69B7B /* MapsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsSearchView.swift; sourceTree = "<group>"; };
+		6E4325FA2BED188A00B69B7B /* CardLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLocalView.swift; sourceTree = "<group>"; };
 		CFE95D292BEA9C1F00A8E9E7 /* ArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtView.swift; sourceTree = "<group>"; };
 		CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArtigoView.swift; sourceTree = "<group>"; };
 		CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -130,16 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				6522502D2BEA673100435EB1 /* EducaSexoApp.swift */,
-				6522505C2BEA6A9D00435EB1 /* LoginView.swift */,
 				652250582BEA6A5600435EB1 /* TabBarView.swift */,
 				CFE95D292BEA9C1F00A8E9E7 /* ArtView.swift */,
 				6522505A2BEA6A8800435EB1 /* ExploreView.swift */,
 				652250622BEA6AE200435EB1 /* QuestionsView.swift */,
+				657B4CB92BEE652E00002FDD /* AnswerQuestionCard.swift */,
 				3505A30C2BEBA90E000A634E /* ArtigoView.swift */,
 				6522505E2BEA6AB600435EB1 /* MapsView.swift */,
-				CF5FF41B2BEE6927005222D7 /* SecondView.swift */,
+				6E4325FA2BED188A00B69B7B /* CardLocalView.swift */,
+				6526231C2BEE4726007CE86F /* AskCardView.swift */,
+				6E4325F82BECF00500B69B7B /* MapsSearchView.swift */,
+				6522505C2BEA6A9D00435EB1 /* LoginView.swift */,
 				652250602BEA6ACF00435EB1 /* Maps.swift */,
-				CF5FF4172BEE5C13005222D7 /* ---.swift */,
 				CFE95D3B2BED080F00A8E9E7 /* ScrollPerguntaView.swift */,
 				CFE95D3D2BED0A6600A8E9E7 /* ScrollArtigoView.swift */,
 				CFE95D2D2BEAAFA400A8E9E7 /* ButtonsView.swift */,
@@ -147,7 +151,6 @@
 				CFE95D2F2BEB9B9B00A8E9E7 /* CardPerguntaView.swift */,
 				CFE95D372BEBF45E00A8E9E7 /* CardPerguntaAddView.swift */,
 				CFE95D2B2BEAAF5B00A8E9E7 /* CardArtigoView.swift */,
-				CF5FF4192BEE5C24005222D7 /* --.swift */,
 				652250312BEA673200435EB1 /* Assets.xcassets */,
 				652250332BEA673200435EB1 /* EducaSexo.entitlements */,
 				652250342BEA673200435EB1 /* Preview Content */,
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4325FB2BED188A00B69B7B /* CardLocalView.swift in Sources */,
 				652250592BEA6A5600435EB1 /* TabBarView.swift in Sources */,
 				652250632BEA6AE200435EB1 /* QuestionsView.swift in Sources */,
 				CFE95D2A2BEA9C1F00A8E9E7 /* ArtView.swift in Sources */,
@@ -317,7 +321,15 @@
 				6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */,
 				CFE95D3C2BED080F00A8E9E7 /* ScrollPerguntaView.swift in Sources */,
 				6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */,
+				652250612BEA6ACF00435EB1 /* Maps.swift in Sources */,
+				6E4325F92BECF00500B69B7B /* MapsSearchView.swift in Sources */,
+				652250612BEA6ACF00435EB1 /* Maps.swift in Sources */,
+				6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */,
+				3505A30D2BEBA90E000A634E /* ArtigoView.swift in Sources */,
+				6522505F2BEA6AB600435EB1 /* MapsView.swift in Sources */,
+				6522505F2BEA6AB600435EB1 /* MapsView.swift in Sources */,
 				CFE95D382BEBF45E00A8E9E7 /* CardPerguntaAddView.swift in Sources */,
+				6526231D2BEE4726007CE86F /* AskCardView.swift in Sources */,
 				652250612BEA6ACF00435EB1 /* Maps.swift in Sources */,
 				CFE95D2E2BEAAFA400A8E9E7 /* ButtonsView.swift in Sources */,
 				6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */,
@@ -326,7 +338,7 @@
 				3505A30D2BEBA90E000A634E /* ArtigoView.swift in Sources */,
 				6522505F2BEA6AB600435EB1 /* MapsView.swift in Sources */,
 				CFE95D302BEB9B9B00A8E9E7 /* CardPerguntaView.swift in Sources */,
-				CF5FF4182BEE5C13005222D7 /* ---.swift in Sources */,
+				657B4CBA2BEE652E00002FDD /* AnswerQuestionCard.swift in Sources */,
 				CFE95D362BEBB9AB00A8E9E7 /* ButtonsView30.swift in Sources */,
 				CFE95D2C2BEAAF5B00A8E9E7 /* CardArtigoView.swift in Sources */,
 			);

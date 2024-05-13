@@ -20,7 +20,9 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Perguntas", systemImage: "questionmark.bubble")
                 }
-            ArtView()
+            ArtigoView()
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(.white, for: .tabBar)
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }

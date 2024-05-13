@@ -24,7 +24,7 @@ struct ButtonsView: View {
                     action1()
                 }
         }
-        .foregroundColor(.pink)
+        .foregroundColor(.rosaES)
         .font(.largeTitle)
     }
 }

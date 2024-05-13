@@ -11,20 +11,48 @@ import SwiftUI
 
 struct MapsView: View {
     //init para mudar a cor da "navigation title"
-    init(){
+//    init(){
 //        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.blue]
+//    }
+    
+    init() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = .red
+        UIPageControl.appearance().pageIndicatorTintColor = .green
     }
     
     var body: some View {
-            NavigationView {
-                    VStack (alignment: .leading, spacing: 30) {
-//                        Spacer().frame(height: 10)
-                        Maps()
-//                        Spacer()
+        NavigationView {
+            ZStack {
+                Color.cinzaES
+                    .ignoresSafeArea()
+                VStack (alignment: .leading) {
+                    Spacer().frame(height: 20)
+                    Maps()
+                    Text("Perto de Você")
+                        .padding(EdgeInsets(top:20, leading: 0, bottom: 0, trailing: 0))
+                        .font(.title2)
+                        .bold()
+                    
+                    ScrollView (.horizontal, showsIndicators: true){
+                        HStack {
+                            CardLocalView()
+                            CardLocalView()
+                            CardLocalView()
+                        }
+                        .scrollTargetLayout()
                     }
-                    .navigationTitle("ioi")
+                    .contentMargins(0, for: .scrollContent)
+                    .scrollTargetBehavior(.viewAligned)
+                    .scrollClipDisabled()
+                    
+                    
+                    Spacer()
+                }
+                .padding(EdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15))
+                .navigationTitle("Mapeamento")
+                
+            }
         }
-        .ignoresSafeArea()
     }
 }
 

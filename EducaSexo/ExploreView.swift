@@ -15,6 +15,10 @@ struct ExploreView: View {
             //Conteúdo --
             VStack {
                 Text("exploreView")
+                CardPerguntaView()
+                    .onTapGesture {
+                        print("View pai")
+                    }
             }
             .navigationTitle("Esse é seu resumo")
         }
