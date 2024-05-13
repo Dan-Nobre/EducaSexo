@@ -120,6 +120,26 @@ struct ArtigoView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(height: 47)
                             .padding(.trailing, 1)
+                        VStack(alignment: .leading){
+                            Text("5")
+                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                .font(.subheadline)
+                            Text("Salvos")
+                                .fontWeight(.regular)
+                                .font(.subheadline)
+                        }
+                        
+                        Spacer()
+                            .padding(10)
+                        }
+                        
+                    HStack{
+                        Image("commentIcon")
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .frame(height: 47)
+                                                    .padding(.trailing, 1)
+                            
                         }
                         
                         Spacer()
