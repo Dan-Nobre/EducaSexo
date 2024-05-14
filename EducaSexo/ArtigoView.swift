@@ -9,9 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ArtigoView: View {
+    @State var present = false
     var body: some View {
         ScrollView {
-            
             VStack(alignment: .leading) {
                 Text("Como prevenir a gravidez na adolescência?")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
@@ -69,21 +69,87 @@ struct ArtigoView: View {
                             .padding(.trailing, 15)
                         
                         VStack(alignment: .leading){
-                            Text("Fulana de Oliveira")
+                            Text("André de Oliveira")
                                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                 .font(.subheadline)
                                 .foregroundColor(.black)
                             
-                            Text("Professora de Biologia")
+                            Text("Professor de Biologia")
                                 .fontWeight(.regular)
                                 .font(.subheadline)
                                 .foregroundColor(.black)
+                                .opacity(0.7)
                             
-                            Text("Saiba mais sobre o autor")
-                                .fontWeight(.regular)
-                                .font(.subheadline)
-                                .foregroundColor(.rosaES)
-                                .underline(color: .rosaES)
+                            Button(action: {present.toggle()}, label: {
+                                Text("Saiba mais sobre o autor")
+                                    .fontWeight(.regular)
+                                    .font(.subheadline)
+                                    .foregroundColor(.rosaES)
+                                    .underline(color: .rosaES)
+                            })
+                            .sheet(isPresented: $present, content: {
+                                
+                                VStack{
+                                    Image("perfilImage")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: 100)
+                                        .padding(.trailing, 15)
+                                    Text("André de Oliveira")
+                                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                        .font(.title)
+                                        .foregroundColor(.black)
+                                    Text("Professor de Biologia")
+                                        .fontWeight(.regular)
+                                        .font(.title2)
+                                        .foregroundColor(.black)
+                                        .opacity(0.7)
+                                    
+                                        .presentationDetents([.fraction(0.25), .medium, .large])
+                                    
+                                    HStack{
+                                        VStack{
+                                            Circle()
+                                                .fill (.rosaES)
+                                                .frame(width: 70)
+                                            Text("selo")
+                                        }
+                                        
+                                        VStack{
+                                            Circle()
+                                                .fill (.rosaES)
+                                                .frame(width: 70)
+                                            Text("selo")
+                                        }
+                                        VStack{
+                                            Circle()
+                                                .fill (.rosaES)
+                                                .frame(width: 70)
+                                            Text("selo")
+                                        }
+                                        VStack{
+                                            Circle()
+                                                .fill (.rosaES)
+                                                .frame(width: 70)
+                                            Text("selo")
+                                        }
+                                        VStack{
+                                            Circle()
+                                                .fill (.rosaES)
+                                                .frame(width: 70)
+                                            Text("selo")
+                                        }
+                                    }
+                                    .padding(.bottom, 30)
+                                     
+                                    Text("Publicações")
+                                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                    
+                                    PickerPerfil()
+                                        .padding()
+                                }
+                            })
                         }
                         
                         Spacer()
@@ -96,56 +162,72 @@ struct ArtigoView: View {
                             .foregroundColor(.white)
                     }
                     
-                    HStack{
-                        Image(systemName: "heart.circle.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 47)
-                            .padding(.trailing, 1)
-                        VStack(alignment: .leading){
-                            Text("12")
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                .font(.subheadline)
-                            Text("Curtidas")
-                                .fontWeight(.regular)
-                                .font(.subheadline)
+                    HStack(spacing: 20){
+                        HStack{//grupo 1
+                            Image(systemName: "heart.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 40)
+//                                .padding(.trailing, 1)
+                            VStack(alignment: .leading){
+                                Text("12")
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .font(.subheadline)
+                                Text("Curtidas")
+                                    .fontWeight(.regular)
+                                    .font(.footnote)
+                                    .lineLimit(1)
+
+                            }
                         }
+//                        Spacer()
+//                        .padding(.bottom, 12)
+//                        .padding(.top, 12)
                         
-                        Spacer()
-                            .padding(.bottom, 80)
-                        
-                    HStack{
-                        Image(systemName: "bookmark.circle.fill")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 47)
-                            .padding(.trailing, 1)
-                        VStack(alignment: .leading){
-                            Text("5")
-                                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                .font(.subheadline)
-                            Text("Salvos")
-                                .fontWeight(.regular)
-                                .font(.subheadline)
+                        HStack{//grupo 2
+                            Image("commentIcon")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 40)
+//                                .padding(.trailing, 1)
+                            VStack(alignment: .leading){
+                                Text("5")
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .font(.subheadline)
+                                Text("Comentários")
+                                    .fontWeight(.regular)
+                                    .font(.footnote)
+                                    .lineLimit(1)
+                            }
                         }
+//                        Spacer()
+//                        .padding(.bottom, 12)
+//                        .padding(.top, 12)
+
                         
-                        Spacer()
-                            .padding(10)
+                        HStack{//grupo3
+                            Image(systemName: "bookmark.circle.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 40)
+//                                .padding(.trailing, 1)
+                            VStack(alignment: .leading){
+                                Text("5")
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .font(.subheadline)
+                                Text("Salvos")
+                                    .fontWeight(.regular)
+                                    .font(.footnote)
+                                    .lineLimit(1, reservesSpace: true)
+                                }
                         }
-                        
-                    HStack{
-                        Image("commentIcon")
-                                                    .resizable()
-                                                    .aspectRatio(contentMode: .fit)
-                                                    .frame(height: 47)
-                                                    .padding(.trailing, 1)
-                            
-                        }
-                        
-                        Spacer()
-                            .padding(.bottom, 80)
-                        
+//                        Spacer()
+//                        .padding(.bottom, 12)
+//                        .padding(.top, 12)
+                   
                     }
+                    .padding(.bottom, 12)
+                    .padding(.top, 12)
                     .foregroundColor(.rosaES)
 //                    .font(.largeTitle)
                 }
