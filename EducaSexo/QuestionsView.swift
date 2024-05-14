@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QuestionsView: View {
-    //init para mudar a cor da "navigation title"
+//    init para mudar a cor da "navigation title"
 //    init(){
 //        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
 //    }
