@@ -41,35 +41,37 @@ struct CardPerguntaAddView: View {
         })
         
         .sheet(isPresented: $isPresented, content: {
-            VStack(alignment: .leading){
-                Text("Qual a sua pergunta?")
-                    .font(.largeTitle)
-                    .bold()
-                    .padding(EdgeInsets(top: 20, leading: 15, bottom: 0, trailing: 15))
-
-                TextField("Digite Aqui", text: $questionText)
-                    .multilineTextAlignment(.leading)
-                    .padding()
+            VStack {
+                VStack(alignment: .leading){
+                    Text("Qual a sua pergunta?")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(EdgeInsets(top: 20, leading: 15, bottom: 0, trailing: 15))
+                    
+                    TextField("Digite Aqui", text: $questionText)
+                        .multilineTextAlignment(.leading)
+                        .padding()
                 }
-            
-            VStack(alignment: .trailing){
-                HStack{
-                    Spacer()
-                    Button(action: {
-                        isPresented.toggle()
-                    }, label: {
-                        HStack{
-                            Image(systemName: "paperplane.fill")
-                            Text("Enviar Pergunta")
-                        }
-                    })
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 15))
-                    .buttonStyle(MySecButtonStyle(color: Color.rosaES))
+                
+                VStack(alignment: .trailing){
+                    HStack{
+                        Spacer()
+                        Button(action: {
+                            isPresented.toggle()
+                        }, label: {
+                            HStack{
+                                Image(systemName: "paperplane.fill")
+                                Text("Enviar Pergunta")
+                            }
+                        })
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 15))
+                        .buttonStyle(MySecButtonStyle(color: Color.rosaES))
+                    }
                 }
+                Spacer()
             }
             .presentationDetents([.fraction(0.95), .medium, .fraction(0.25)])
         })
-
     }
 }
 
