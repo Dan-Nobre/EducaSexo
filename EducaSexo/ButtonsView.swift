@@ -20,7 +20,7 @@ struct ButtonsView: View {
         }
       }
       .font(.system(size:30.0))
-      .foregroundColor(.pink)
+      .foregroundColor(.rosaES)
     }
 }
 
