@@ -15,18 +15,41 @@ struct ExploreView: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView{
-                ZStack{
+            ZStack{
+                Color(.cinzaES)
+                ScrollView(.vertical){
                     Rectangle()
                         .fill(.azulES)
-                        .frame(width: 413,height: 340)
+                        .frame(width: 413,height: 300)
+                    VStack{
+                        VStack(alignment:.leading){
+                            HStack{
+                                Text("Perguntas mais recentes")
+                                    .foregroundColor(.white)
+                                    .font(.title2.bold())
+                                    .padding(10)
+                            }
+                            ScrollPerguntaView()
+                        }
+                        .padding(.bottom,30)
+                        VStack(alignment: .leading){
+                            HStack{
+                                Text("Artigos mais relevantes")
+                                    .foregroundColor(.black)
+                                    .font(.title2.bold())
+                            }
+                            ScrollArtigoView()
+                            
+                        }
+                        VStack{
+                            PIckerExploreView()
+                                .padding()
+                        }
+                    }
+                    .offset(y: -105)
                 }
-                VStack{
-                    ScrollPerguntaView()
-                    ScrollArtigoView()
-                }
+                .navigationTitle("Explore View")
             }
-            .navigationTitle("Explore View")
             .ignoresSafeArea()
         }
     }
