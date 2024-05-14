@@ -33,6 +33,7 @@ struct CardPerguntaView: View {
                     .foregroundColor(.black)
                     .cornerRadius(10)
                 }
+//                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
