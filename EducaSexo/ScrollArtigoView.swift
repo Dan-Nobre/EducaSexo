@@ -10,7 +10,8 @@ import SwiftUI
 struct ScrollArtigoView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            VStack(alignment:.leading){
+                
                 ScrollView(.horizontal){
                     HStack{
                         CardArtigoView()
@@ -20,39 +21,16 @@ struct ScrollArtigoView: View {
                     }
                     .scrollTargetLayout()
                 }
+                .padding(5)
                 .contentMargins(10, for: .scrollContent)
                 .scrollTargetBehavior(.viewAligned)
                 .scrollClipDisabled(true)
                 .border(.green)
-                .frame(width: 350, height: 100)
+                .frame(width: 350)
             }
         }
     }
 }
-
-
-
-
-//struct ScrollArtigoView: View {
-//    var body: some View {
-//        VStack{
-//            Text("Artigos mais populares")
-//            ScrollView(.horizontal) {
-//                HStack(spacing:10){
-//                    CardArtigoView()
-//                    CardArtigoView()
-//                    CardArtigoView()
-//                }
-//                .scrollTargetLayout()
-//            }
-//            .contentMargins(10, for: .scrollContent) // Add padding
-//            .scrollTargetBehavior(.viewAligned)
-//            .scrollClipDisabled()
-//            .border(.green)
-//            .frame(width: 350)
-//        }
-//    }
-//}
 
 #Preview {
     ScrollArtigoView()

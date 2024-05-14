@@ -33,18 +33,8 @@ struct MapsView: View {
                         .font(.title2)
                         .bold()
                     
-                    ScrollView (.horizontal, showsIndicators: true){
-                        HStack {
-                            CardLocalView()
-                            CardLocalView()
-                            CardLocalView()
-                        }
-                        .scrollTargetLayout()
-                    }
-                    .contentMargins(0, for: .scrollContent)
-                    .scrollTargetBehavior(.viewAligned)
-                    .scrollClipDisabled()
-                    
+                    //aq
+                    ScrollLocalView()
                     
                     Spacer()
                 }
