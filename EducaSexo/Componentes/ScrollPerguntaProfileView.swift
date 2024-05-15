@@ -14,17 +14,19 @@ struct ScrollPerguntaProfileView: View {
             VStack(alignment: .leading){
                 ScrollView(.horizontal){
                     HStack {
-                        CardPerguntaView()
-                        CardPerguntaView()
-                        CardPerguntaView()
-                        CardPerguntaView()
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
+                        CardPerguntaView(question: .init(id: 1, description: "pergunta 1?"))
                     }
                     .scrollTargetLayout()
                 }
                 .contentMargins(10, for: .scrollContent)
                 .scrollTargetBehavior(.viewAligned)
                 .scrollClipDisabled(true)
-                .border(.green)
+//                .border(.green)
                 .frame(width: 350, height: 100)
             }
         }

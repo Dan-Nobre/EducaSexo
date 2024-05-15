@@ -12,7 +12,7 @@ struct AskCardView: View {
         VStack(alignment: .leading) {
                 HStack {
                     Image("ProfilePhoto")
-                        .offset(x: -6, y: -15)
+                        .offset(x: 5, y: -15)
 
                     HStack{
                         Text("Fulano da Silva | Professor de Biologia")
@@ -24,9 +24,12 @@ struct AskCardView: View {
                     .bold()
                     .font(.title3)
                     .padding(.top, -12)
+                    .padding(.bottom, 10)
 
-                Text("Tenho muitas dúvidas da utilidade do preservativo, ele serve só pra impedir a gravidez não planjeada?")
-                .offset(x: 0, y: 0.2)
+                Text("Aqui o usuário deve descrever melhor a dúvida que ele tenha, o usuário deve descrever melhor a dúvida que ele tenha.")
+                .opacity(0.5)
+                .bold()
+
 
             Spacer()
             

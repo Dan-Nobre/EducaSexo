@@ -22,7 +22,17 @@ struct PIckerExploreView: View {
             Text("Artigos")
                 .tag(1)
         }
+        .padding(2)
         .pickerStyle(.segmented)
+        
+        //logica para dimamizar
+        HStack(alignment:.top){
+            if pressed == 0{
+                ScrollPerguntaView()
+            }else if pressed == 1{
+                ScrollArtigoView()
+            }
+        }
     }
 }
 #Preview {
