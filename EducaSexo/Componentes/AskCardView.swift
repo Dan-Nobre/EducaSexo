@@ -15,21 +15,21 @@ struct AskCardView: View {
                         .offset(x: 5, y: -15)
 
                     HStack{
-                        Text("Fulano da Silva | Enfermeiro")
+                        Text("Fulano da Silva | Professor de Biologia")
                     }
                     .font(.caption)
                 }
 
-                Text("Aqui o usuário deve colocar uma dúvida que ele tenha?")
+                Text("Porque usar preservativo? Quando isso é necessário?")
                     .bold()
                     .font(.title3)
                     .padding(.top, -12)
                     .padding(.bottom, 10)
 
                 Text("Aqui o usuário deve descrever melhor a dúvida que ele tenha, o usuário deve descrever melhor a dúvida que ele tenha.")
-//                .offset(x: 0, y: 0.2)
                 .opacity(0.5)
                 .bold()
+
 
             Spacer()
             
