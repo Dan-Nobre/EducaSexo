@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct EducaSexoApp: App {
+    
+    @State private var navigateToNextScreen = false
+    
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            if !navigateToNextScreen {
+                SplashScreenView(navigateToNextScreen: $navigateToNextScreen)
+            } else {
+                TabBarView()
+            }
         }
     }
 }

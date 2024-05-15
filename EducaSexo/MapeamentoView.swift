@@ -16,7 +16,7 @@ struct MapeamentoView: View {
     @State var camera: MapCameraPosition = .automatic
     
     var body: some View {
-        ScrollView{
+        ScrollView {
             VStack{
                 
             }
@@ -25,6 +25,7 @@ struct MapeamentoView: View {
             .frame(maxWidth: .infinity)
             .padding(.bottom, 200)
             .background(.azulES)
+            
             HStack{
                 Text("Mapeamento")
                     .bold()
@@ -79,3 +80,14 @@ struct MapeamentoView: View {
 #Preview {
     MapeamentoView()
 }
+
+/*
+ !nextScreen {
+    Splash
+ } else {
+    TabView
+        Nav
+        Nav
+        Nav
+ }
+ */
