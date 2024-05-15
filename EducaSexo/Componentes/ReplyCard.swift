@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 struct ReplyCardView: View {
+    @State private var wasUseful = false
+    @State private var qtStars = 0
+    @State private var wasAllStars = false
+    @State private var qtUseful = 4
+    
     var body: some View {
         VStack(alignment: .leading) {
                 HStack {
@@ -36,19 +41,50 @@ struct ReplyCardView: View {
                     .offset(x: 0, y: 5)
                     .lineLimit(3, reservesSpace: true)
                 HStack{
-                    Image("LikeButton")
-                        .resizable()
-                        .scaledToFit()
-                        .foregroundColor(.azulES)
-                    Text("Foi útil?")
-                        .underline()
-                        .bold()
-                    Text("5")
+                    Button(action: {
+                        wasUseful.toggle()
+                        qtUseful = wasUseful ? 5 : 4
+                    }, label: {
+                        wasUseful ? 
+                        Image("LikeButton")
+                            .resizable()
+                            .scaledToFit()
+                        : Image("LikeButtonUn")
+                            .resizable()
+                            .scaledToFit()
+
+                        Text("Foi útil?")
+                            .underline()
+                            .bold()
+                    })
+                    Text("\(qtUseful)")
                     Spacer()
-                    HStack(spacing: 2){
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star.fill")
-                        Image(systemName: "star")
+                    HStack{
+                        Button(action: {
+                            if qtStars == 1 {
+                                qtStars -= 1
+                            } else {
+                                qtStars = 1
+                            }
+                        }, label: {
+                            Image(systemName: "star")
+                                .symbolVariant(qtStars >= 1 ? .fill : .none)
+                        })
+                        
+                        Button(action: {
+                            qtStars = 2
+                        }, label: {
+                            Image(systemName: "star")
+                                .symbolVariant(qtStars >= 2 ? .fill : .none)
+                        })
+                        
+                        Button(action: {
+                            qtStars = 3
+                        }, label: {
+                            Image(systemName: "star")
+                                .symbolVariant(qtStars >= 3 ? .fill : .none)
+                        })
+                        
                     }
                 }
                 .font(.footnote)
