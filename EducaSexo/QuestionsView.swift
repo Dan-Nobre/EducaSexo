@@ -13,38 +13,52 @@ struct QuestionsView: View {
 //        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.red]
 //    }
     
+//    init para mudar a cor da "navigation title"
+    init(){
+        UIToolbar.appearance().barTintColor = UIColor.white
+    }
+    
     var body: some View {
-        ScrollView{
-            VStack{
-                
+        NavigationStack {
+            ScrollView {
+                VStack {
+                    
+                }
+                .padding(.top, 60)
+                .padding(.horizontal)
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 200)
+                .background(.azulES)
+                VStack{
+                    AskCardView()
+                        .frame(height: 0)
+                        .zIndex(1)
+                        .offset(y: -40)
+                    AnswerQuestionCard()
+                        .padding(EdgeInsets(top: 70, leading: 20, bottom: 0, trailing: 20))
+                        .zIndex(2)
+                    Text("Respostas")
+                        .font(.largeTitle)
+                        .bold()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    ReplyCardView()
+                }
+                .frame(width: 352)
             }
-            .padding(.top, 60)
-            .padding(.horizontal)
-            .frame(maxWidth: .infinity)
-            .padding(.bottom, 200)
-            .background(.azulES)
-            VStack{
-                AskCardView()
-                    .frame(height: 0)
-                    .zIndex(1)
-                    .offset(y: -40)
-                AnswerQuestionCard()
-                    .padding(EdgeInsets(top: 70, leading: 20, bottom: 0, trailing: 20))
-                    .zIndex(2)
-                Text("Respostas")
-                    .font(.largeTitle)
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                ReplyCardView()
-            }
-            .frame(width: 352)
+            .background(.cinzaES)
+            .ignoresSafeArea()
         }
-        .background(.cinzaES)
-        .ignoresSafeArea()
+        .toolbar{
+        }
+        .navigationBarTitle("Pergunta")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
 #Preview {
-    QuestionsView()
+    NavigationStack {
+        QuestionsView()
+    }
 }
 
