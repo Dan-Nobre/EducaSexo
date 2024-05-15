@@ -20,7 +20,7 @@ struct AskCardView: View {
                     .font(.caption)
                 }
 
-                Text("Porque usar preservativo? Quando isso é necessário?")
+                Text("qual o melhor atendimento para um paciente que sofre assédio?")
                     .bold()
                     .font(.title3)
                     .padding(.top, -12)

@@ -29,7 +29,7 @@ struct AnswerQuestionCard: View {
                 .sheet(isPresented: $isPresented, content: {
                     VStack {
                         VStack(alignment: .leading){
-                            Text("Porque usar preservativo? Quando isso é necessário?")
+                            Text("qual o melhor atendimento para um paciente que sofre assédio?")
                                 .font(.title)
                                 .bold()
                                 .padding(EdgeInsets(top: 20, leading: 15, bottom: 0, trailing: 15))

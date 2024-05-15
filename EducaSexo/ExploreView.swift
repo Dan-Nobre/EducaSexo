@@ -14,7 +14,6 @@ struct ExploreView: View {
                     Rectangle()
                         .fill(.azulES)
                         .frame(width: 413, height: 300)
-
                     VStack(){
                         HStack(alignment:.center){//meu título
                             Text("Seu Resumo😘")
@@ -27,8 +26,6 @@ struct ExploreView: View {
                                     .frame(width: 30, height: 30)
                                     .foregroundColor(.white)
                             }
-                            
-                            
                         }
                         .padding(25)
 

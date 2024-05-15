@@ -17,7 +17,7 @@ struct CardPerguntaView: View {
 //                Color(.gray).ignoresSafeArea()
                 NavigationLink(destination: QuestionsView()){
                     VStack(alignment: .leading){
-                        Text("qual o melhor atendiment para um paciente que sofre assédio? ")
+                        Text("qual o melhor atendimento para um paciente que sofre assédio?")
                             .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.black)
                             .font(.caption2)

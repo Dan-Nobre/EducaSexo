@@ -31,18 +31,6 @@ struct LoginView: View {
                         .font(.system(size: 40))
                     }
                 }
-                VStack{
-                    NavigationLink(destination: TabBarView()) {
-                        Text("Profissional")
-                    }
-                    .buttonStyle(MyButtonStyle(color: Color.azulES))
-                    
-                    NavigationLink(destination: TabBarView()) {
-                        Text("Curioso")
-                    }
-                    .buttonStyle(MyButtonStyle(color: Color.rosaES))
-                }
-                .padding(EdgeInsets(top: 75, leading: 71, bottom: 0, trailing: 71))
             }
         }
     }

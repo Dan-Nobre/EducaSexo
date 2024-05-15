@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 
 struct ProfileView: View {
+    //    init para mudar a cor da "navigation title"
+        init(){
+            UIToolbar.appearance().barTintColor = UIColor.white
+        }
     
     var body: some View {
         NavigationStack {
@@ -17,7 +21,8 @@ struct ProfileView: View {
                     Color(Color.cinzaES)
                     VStack{
                         Rectangle()
-                            .frame(height: 120)
+                            .frame(height: 300)
+                            .offset(y:-180)
                             .foregroundColor(.azulES)
                         Spacer()
                     }
@@ -57,6 +62,7 @@ struct ProfileView: View {
                             
                             //Scroll Artigo
                             ScrollArtigoView()
+                                .offset(x:15)
                             
                             Text("Perguntas Salvas")
                                 .font(.title2)
@@ -81,11 +87,12 @@ struct ProfileView: View {
                         
                     }
                 }
+//                .ignoresSafeArea()
             }
             .ignoresSafeArea(.container, edges: .bottom)
             .navigationBarTitle("Seu perfil")
             .navigationBarTitleDisplayMode(.inline)
-            //se referencia ao que esta dentro da navigation stack
+            .toolbarBackground(.visible, for: .navigationBar)
             
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

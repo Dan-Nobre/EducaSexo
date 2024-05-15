@@ -106,51 +106,45 @@ struct ArtigoView: View {
                                             .font(.title2)
                                             .foregroundColor(.black)
                                             .opacity(0.7)
-                                        
-                                            .presentationDetents([.fraction(0.25), .medium, .large])
-                                        
                                         HStack{
                                             VStack{
                                                 Circle()
-                                                    .fill (.rosaES)
+                                                    .fill (.gray)
                                                     .frame(width: 70)
-                                                Text("selo")
+                                                Text("selo 1")
                                             }
                                             
                                             VStack{
                                                 Circle()
-                                                    .fill (.rosaES)
+                                                    .fill (.gray)
                                                     .frame(width: 70)
-                                                Text("selo")
+                                                Text("selo 2")
                                             }
                                             VStack{
                                                 Circle()
-                                                    .fill (.rosaES)
+                                                    .fill (.gray)
                                                     .frame(width: 70)
-                                                Text("selo")
+                                                Text("selo 3")
                                             }
                                             VStack{
                                                 Circle()
-                                                    .fill (.rosaES)
+                                                    .fill (.gray)
                                                     .frame(width: 70)
-                                                Text("selo")
-                                            }
-                                            VStack{
-                                                Circle()
-                                                    .fill (.rosaES)
-                                                    .frame(width: 70)
-                                                Text("selo")
+                                                Text("selo 4")
                                             }
                                         }
-                                        .padding(.bottom, 30)
+                                        .padding(30)
                                         
                                         Text("Publicações")
                                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                                         
                                         PickerPerfil()
-                                            .padding()
+                                            
                                     }
+                                    .padding(30)
+                                    Spacer()
+                                    .presentationDetents([.large])
                                 })
                             }
                             
