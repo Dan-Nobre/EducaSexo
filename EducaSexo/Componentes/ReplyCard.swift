@@ -36,7 +36,7 @@ struct ReplyCardView: View {
                     .font(.footnote)
                     .bold()
                     .padding(.top, 5)
-                Text("Aqui o usuário deve descrever melhor a resposta que ele tenha, o usuário deve descrever a dúvida.")
+                Text("Aqui o usuário deve descrever melhor a resposta que ele tenha.")
                     .font(.callout)
                     .offset(x: 0, y: 5)
                     .lineLimit(3, reservesSpace: true)
