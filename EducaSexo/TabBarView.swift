@@ -30,6 +30,7 @@ struct TabBarView: View {
                     Label("Mapeamento", systemImage: "map")
                 }
         }
+        .navigationBarBackButtonHidden(true)
 
     }
 }
