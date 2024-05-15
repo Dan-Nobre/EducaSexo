@@ -20,8 +20,13 @@ struct CardArtigoView: View {
                                 .font(.headline)
                                 .lineLimit(3, reservesSpace: true)
                             Spacer()
-                            Image("AtigoImage")
-                                .cornerRadius(10) // Round image corners
+                            Image("ubs-benfica")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 110, height: 110)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(10)
+                                //ENTERDER ISSO
                         }
                         HStack{
                             Image(systemName:"person.circle.fill")
