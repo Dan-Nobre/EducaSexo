@@ -26,7 +26,9 @@ struct CardLocalView: View {
                         Image(systemName: "clock")
                         Text("Seg - Sex (8:00 - 17:00)")
                     }
-                })
+                }
+                )
+                .foregroundColor(.black)
                 Spacer()
                 Image("ubs-benfica")
                     .resizable()

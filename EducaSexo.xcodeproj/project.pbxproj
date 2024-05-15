@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3505A30D2BEBA90E000A634E /* ArtigoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3505A30C2BEBA90E000A634E /* ArtigoView.swift */; };
 		35D7D2B52BF3ACBC004225F3 /* PickerPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D7D2B42BF3ACBC004225F3 /* PickerPerfil.swift */; };
-		650286E42BF3C5D8001571AB /* MapaTeste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650286E32BF3C5D8001571AB /* MapaTeste.swift */; };
+		650286E42BF3C5D8001571AB /* MapeamentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650286E32BF3C5D8001571AB /* MapeamentoView.swift */; };
 		650F07EB2BF257510087EBF3 /* ReplyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650F07EA2BF257510087EBF3 /* ReplyCard.swift */; };
 		6522502E2BEA673100435EB1 /* EducaSexoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6522502D2BEA673100435EB1 /* EducaSexoApp.swift */; };
 		652250322BEA673200435EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652250312BEA673200435EB1 /* Assets.xcassets */; };
@@ -62,7 +62,7 @@
 /* Begin PBXFileReference section */
 		3505A30C2BEBA90E000A634E /* ArtigoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtigoView.swift; sourceTree = "<group>"; };
 		35D7D2B42BF3ACBC004225F3 /* PickerPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPerfil.swift; sourceTree = "<group>"; };
-		650286E32BF3C5D8001571AB /* MapaTeste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaTeste.swift; sourceTree = "<group>"; };
+		650286E32BF3C5D8001571AB /* MapeamentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapeamentoView.swift; sourceTree = "<group>"; };
 		650F07EA2BF257510087EBF3 /* ReplyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCard.swift; sourceTree = "<group>"; };
 		6522502A2BEA673100435EB1 /* EducaSexo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EducaSexo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6522502D2BEA673100435EB1 /* EducaSexoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducaSexoApp.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 				6522505C2BEA6A9D00435EB1 /* LoginView.swift */,
 				6E7A764D2BF25EA700F28B8E /* ProfileView.swift */,
 				6EAC61B42BF3D18C00BA153F /* ConfigView.swift */,
-				650286E32BF3C5D8001571AB /* MapaTeste.swift */,
+				650286E32BF3C5D8001571AB /* MapeamentoView.swift */,
 				650286E22BF3B991001571AB /* Views */,
 				650286E12BF3B983001571AB /* Componentes */,
 				652250312BEA673200435EB1 /* Assets.xcassets */,
@@ -362,7 +362,7 @@
 				6EEF7A112BF3AB9B0058F899 /* ScrollLocalView.swift in Sources */,
 				CFE95D3E2BED0A6600A8E9E7 /* ScrollArtigoView.swift in Sources */,
 				6522505B2BEA6A8800435EB1 /* ExploreView.swift in Sources */,
-				650286E42BF3C5D8001571AB /* MapaTeste.swift in Sources */,
+				650286E42BF3C5D8001571AB /* MapeamentoView.swift in Sources */,
 				CFE95D3C2BED080F00A8E9E7 /* ScrollPerguntaView.swift in Sources */,
 				6522505D2BEA6A9D00435EB1 /* LoginView.swift in Sources */,
 				652250612BEA6ACF00435EB1 /* Maps.swift in Sources */,

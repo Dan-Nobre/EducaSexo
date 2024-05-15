@@ -8,6 +8,7 @@ import SwiftUI
 
 //struct
 struct TabBarView: View {
+
     var body: some View {
         TabView {
             ExploreView()
@@ -24,11 +25,12 @@ struct TabBarView: View {
                 .tabItem {
                     Label("Artigos", systemImage: "newspaper")
                 }
-            MapsView()
+            MapeamentoView()
                 .tabItem {
                     Label("Mapeamento", systemImage: "map")
                 }
         }
+
     }
 }
 
