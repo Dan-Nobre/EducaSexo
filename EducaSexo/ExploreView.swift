@@ -1,54 +1,71 @@
-//
-//  ExploreView.swift
-//  EducaSexoApp
-//
-//  Created by User on 29/04/24.
-//
+// ExploreView.swift
+// EducaSexoApp
 
 import SwiftUI
 
 struct ExploreView: View {
-//    init para mudar a cor da "navigation title"
-    init(){
-        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-    }
-    
+
     var body: some View {
         NavigationStack {
-            ZStack{
+            ZStack {
                 Color(.cinzaES)
-                ScrollView(.vertical){
+
+                ScrollView() {
                     Rectangle()
                         .fill(.azulES)
-                        .frame(width: 413,height: 300)
-                    VStack{
-                        VStack(alignment:.leading){
-                            HStack{
-                                Text("Perguntas mais recentes")
+                        .frame(width: 413, height: 300)
+
+                    VStack(){
+                        HStack(alignment:.center){//meu título
+                            Text("Seu Resumo😘")
+                                .foregroundColor(.white)
+                                .font(.largeTitle.bold())
+                            Spacer()
+                            NavigationLink(destination: ProfileView()){
+                                Image("perfilImage")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
                                     .foregroundColor(.white)
-                                    .font(.title2.bold())
-                                    .padding(10)
                             }
-                            ScrollPerguntaView()
-                        }
-                        .padding(.bottom,30)
-                        VStack(alignment: .leading){
-                            HStack{
-                                Text("Artigos mais relevantes")
-                                    .foregroundColor(.black)
-                                    .font(.title2.bold())
-                            }
-                            ScrollArtigoView()
+                            
                             
                         }
-                        VStack{
-                            PIckerExploreView()
-                                .padding()
+                        .padding(25)
+
+                        VStack(alignment: .leading) { //primeira linha
+                            Text("Perguntas mais recentes")
+                                .foregroundColor(.white)
+                                .font(.title2.bold())
+                                .padding(.bottom)
+                            ScrollPerguntaView()
                         }
+                        .padding(.bottom, 30)
+
+                        VStack(alignment: .leading) { //segunda linha
+                            Text("Perguntas mais recentes")
+                                .foregroundColor(.black)
+                                .font(.title2.bold())
+
+                            ScrollArtigoView()
+                        }
+                        .padding(.bottom, 30)
+
+                        VStack(alignment:.leading){ //terceira linha
+                            Text("Top 10 mais relevantes ")
+                                .foregroundColor(.black)
+                                .font(.title2.bold())
+                            PIckerExploreView()
+                                .padding(.bottom,20)
+                        }
+                        .frame(width: 350)
                     }
-                    .offset(y: -105)
+                    .offset(y: -230)
                 }
-                .navigationTitle("Explore View")
+
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                    }
+                }
             }
             .ignoresSafeArea()
         }
@@ -58,3 +75,4 @@ struct ExploreView: View {
 #Preview {
     ExploreView()
 }
+

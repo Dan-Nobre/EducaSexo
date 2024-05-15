@@ -11,23 +11,23 @@ struct CardArtigoView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                //                Color(.gray).ignoresSafeArea()
-                
+//          Color(.gray).ignoresSafeArea()
                 NavigationLink(destination: ArtigoView()){
-                    VStack(alignment: .leading){
+                    VStack{
                         HStack{
-                            Text("Aqui deve estar o título do Artigo que o user vai escrever e postar ")
+                            Text("Como prevenir a gravidez na adolescência:")
+                                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                                 .font(.headline)
                                 .lineLimit(3, reservesSpace: true)
                             Spacer()
-                            Image("ubs-benfica")
+                            Image("sexeducation")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 110, height: 110)
                                 .aspectRatio(contentMode: .fit)
                                 .cornerRadius(10)
-                                //ENTERDER ISSO
                         }
+                        Spacer()
                         HStack{
                             Image(systemName:"person.circle.fill")
                             Text("Fulano da Silva | Enfermeiro")

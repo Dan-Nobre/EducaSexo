@@ -21,12 +21,12 @@ struct ScrollArtigoView: View {
                     }
                     .scrollTargetLayout()
                 }
-                .padding(5)
-                .contentMargins(10, for: .scrollContent)
+                .contentMargins(1, for: .scrollContent)
                 .scrollTargetBehavior(.viewAligned)
                 .scrollClipDisabled(true)
-                .border(.green)
-                .frame(width: 350)
+//                .border(.green)
+                .frame(width: 350,height: 190)
+                Spacer()
             }
         }
     }
