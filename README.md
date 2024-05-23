@@ -18,12 +18,33 @@
 
 ## 📑 Sobre
 
-Ajuda profissionais da saúde a diversificarem a informação sobre a educação sexual e disseminar informações a interessados.
+Nossa missão é ajudar e conectar profissonais interessados em educação sexual, permitindo a diversificação da informação em um ambiente seguro
+e de fácil acesso, promovendo mais capacitação na hora de abordar o tema e melhorar o acolhimento quando necessário. 
+
+Nosso produto se originou de uma pesquisa[^1]. feita com profissionais da saúde, onde foram detectadas algumas dificuldades em abordar temas sensíveis
+dentro de determinados grupos, onde o tema "sexo" é abordado como um tabú.
+
+Com a pesquisa surge o EducaSexo, uma plataforma que busca dar a esses profissionais um ambiente acolhedor e seguro, onde eles possam trocar informações
+e continuar levando qualidade de vida a outros.
+
+> [!NOTE]
+> Este produto é fruto de um MVP que após pesquisa e confirmação foi validado e seguiu para a prototipação.
+
+
+## 🛠️ Tecnologias e Métodos utilizados
+
+Tecnologias utilizadas:
+
+`figma prototipo`
+`XCode`
 
 ## 📷 Mídias e Capturas de Tela
 
 
+## 💖 Equipe e Colaboradores
 
+
+[^1]: My reference.
 
   
 
