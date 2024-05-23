@@ -2,15 +2,18 @@
 
 <h1 align="center">EducaSexo 💟</h1>
 
+<h3 align="center"> Uma app que informa, democratiza e atualiza a educação sexual no Brasil 💟 </h3>
+
+
 <p align="center">
-  <img alt="" src="https://github.com/Dan-Nobre/EducaSexo/assets/55868687/f853bfce-3e26-4064-9293-115a23daa681">
+  <img alt="" src="https://github.com/Dan-Nobre/EducaSexo/assets/55868687/78ac6e6c-b412-406a-97d6-0ff170d8e4f6">
 
   <a aria-label="Acesse nossa plataforma" href="https://vezenquanndo.wixstudio.io/educasexo" target="_blank">
-    <img alt="" src="https://github.com/Dan-Nobre/EducaSexo/assets/55868687/e20162f1-7b4a-43ee-b5f7-dfa587b94c7b">
+    <img alt="" src="https://github.com/Dan-Nobre/EducaSexo/assets/55868687/8472f27b-a6c3-4d02-9586-2432de2523e6">
   </a>
 </p>
 
-<p align="center"> Uma plataforma que Informa, democratiza e atualiza a educação sexual no Brasil 💟 </p>
+
 
 > Aborde temas sensíveis em um ambiente seguro.
 > 
@@ -33,10 +36,26 @@ e continuar levando qualidade de vida a outros.
 
 ## 🛠️ Tecnologias e Métodos utilizados
 
-Tecnologias utilizadas:
+Tecnologias e Ferramentas:
 
-`figma prototipo`
-`XCode`
+- `XCode`
+- `SwiftLint`
+- `SwiftUI`
+- `Swift`
+- `Figma`
+- `Design` 
+- `Prototipação`
+- `Miro`
+- `Versionamento de Código`
+- `GitFlow`
+
+
+## 📝 Funcionalidades
+
+- **Explorar:** tenha acesso aos artigos, perguntas e sessões em alta do nosso app.
+- **Artigos:** uma sessão cheia de artigos criado por colegas profissionais.
+- **Perguntas:** tem uma dúvida? pergunte na sessão "perguntas" e tenha a opnião de seus colegas.
+- **Mapeamento:** saiba os locais de testagem rápida para doenças e tenha acesso a localização de serviços na sua região.
 
 ## 📷 Mídias e Capturas de Tela
 
