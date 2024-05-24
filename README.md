@@ -30,9 +30,6 @@ dentro de determinados grupos, onde o tema "sexo" é abordado como um tabú.
 Com a pesquisa surge o EducaSexo, uma plataforma que busca dar a esses profissionais um ambiente acolhedor e seguro, onde eles possam trocar informações
 e continuar levando qualidade de vida a outros.
 
-> [!NOTE]
-> Este produto é fruto de um MVP que após pesquisa e confirmação foi validado e seguiu para a prototipação.
-
 
 ## 🛠️ Tecnologias e Métodos utilizados
 
