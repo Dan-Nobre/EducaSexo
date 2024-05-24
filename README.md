@@ -117,6 +117,9 @@ Tecnologias e Ferramentas:
  </h4> 
 
 
+ <h5>Todos os direitos reservados.</h5>
+
+
 [^1]: Foi realizada uma pesquisa realizada dentro do IFCE com profissionais do posto de enfermagem e acolhimento psicológico, com perguntas
 discussivas sobre a visão do profissional em relação a políticas públicas voltada a educação sexual e a prática de campanhas
 dentro das instituições de ensino.
